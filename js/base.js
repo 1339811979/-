@@ -28,10 +28,10 @@ $(document).ready(function(){
                 var head = $(".head");
                 if(head.hasClass("head_down")){
                     head.removeClass("head_down");
-                    head.find(".logo img").attr("src","img/logo.png");
+                    head.find(".logo img").attr("src","img/logo.gif");
                 }else{
                     head.addClass("head_down");
-                    head.find(".logo img").attr("src","img/logo_down.png");
+                    head.find(".logo img").attr("src","img/logo.gif");
                 }
 
             }
@@ -82,10 +82,10 @@ $(document).ready(function(){
             $(window).scroll(function () {
                 if ($(window).scrollTop() >= 50) {
                     head.addClass("head_down");
-                    head.find(".logo img").attr("src","img/logo_down.png");
+                    head.find(".logo img").attr("src","img/logo.gif");
                 } else {
                     head.removeClass("head_down");
-                    head.find(".logo img").attr("src","img/logo.png")
+                    head.find(".logo img").attr("src","img/logo.gif")
                 }
             });
     }

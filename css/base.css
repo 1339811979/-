@@ -52,8 +52,8 @@ a, img {text-decoration: none;border: none;}
 .head_down .join a {color:#fff;background:#ff4b1f;font-weight: 400;border-radius: 5px;}
 
 /*logo*/
-.logo{display: inline-block;overflow: hidden;position: relative;height: 100%;}
-.logo img{height: 100%;}
+.logo{display: inline-block;overflow: hidden;height: 100%;margin-left:-100px;}
+.logo img{height: 100%;margin-left:-100px;}
 
 /*nav*/
 .nav_box{float: right;}

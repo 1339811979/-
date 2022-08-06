@@ -134,13 +134,13 @@ input:-ms-input-placeholder {color:#717678;}
 .ying{margin-left: 10px;}
 .yue,.zhe{font-size: 49px;color:#fff;font-weight: 400;display:inline-block;position:relative;margin-left:10px;font-family: '华文中宋' !important;}
 
-.ri,.yue,.ying,.zhe{transition: all 0.6s;transform: translateY(-50px);opacity: 0;}
+.ri,.yue,.ying,.zhe{transition: all 10s;transform: translateY(-50px);opacity: 0;}
 .ok .ri,.ok .yue,.ok .ying,.ok .zhe{transform: translateY(0px);-webkit-transform: translateY(0);opacity: 1;}
-.ri{transition-delay: .2s;}
-.yue{transition-delay: .4s;}
-.ying{transition-delay: .6s;}
-.zhe{transition-delay: .8s;}
-
+.ri{transition-delay: 2s; color: #bb976e;}
+.yue{transition-delay: 3s;}
+.ying{transition-delay: 4s;}
+.zhe{transition-delay: 5s;}
+.dongfangliyu{float:right;font-size: 16px;color:#fff;font-weight: 100;transition-delay: 7s;margin-top:20px;}
 #video1{height: 100%;width: 100%;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);z-index: 1;object-fit: cover;}
 
 /*首页鼠标滑动*/

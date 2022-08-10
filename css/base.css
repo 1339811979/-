@@ -468,7 +468,7 @@ input:-ms-input-placeholder {color:#717678;}
     overflow: hidden;text-overflow: ellipsis;text-align: center;-webkit-line-clamp: 3;
     -webkit-box-orient: vertical;word-break: break-all;display: -webkit-box;}
 
-.business_item:hover{background:#ff4b1f;}
+.business_item:hover{background:#ffdde1;}
 .business_item:hover .fa,.business_item:hover h2,.business_item:hover p{color:#fff;}
 
 .business_box{width:100%;padding:40px 0;}

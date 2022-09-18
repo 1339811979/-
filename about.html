@@ -21,7 +21,7 @@
     <link rel="icon" href="img/title.ico">
 </head>
 
-<body>
+<body onload="myfunction()">
 
 <!--头部开始-->
 <div class="head">
@@ -96,6 +96,7 @@
         <div class="base_table">
             <div class="base_cell">
                 <h2>笃信专业力量，崇尚诚信精神，追求共赢格局</h2>
+                <p><h3  id="gonggao"><span style="color: red;"></span></h3></p>
             </div>
         </div>
     </div>
@@ -206,7 +207,7 @@
 
     <div class="footer_bottom clearfix">
         <div class="content_container">
-            <div class="footer_banquanbeian">
+            <div class="footer_banquanbeian" style="">
                 <span>Copyright © 2022-2023 Power by Dongfangliyu（zhangyajun）</span>
                 <a href="javascript:void(0)">【工信部ICP备案】晋ICP备2022005351号-1</a>
 
@@ -225,4 +226,28 @@
 <!--底部结束-->
 
 </body>
+
+<script type="text/javascript">
+    function myfunction(){
+        var tishi= "";
+         $.ajax({
+             async: true,
+             type: "GET",
+             url: "http://localhost:8080/flow/rest/process/list?str=个人栏目后续发布！！",
+             data: "",
+             dataType: "json",
+             success: function(data){
+                       if(data == null){
+                            alert("");
+                       }else{
+                         $("#gonggao").html(data);
+                       }
+                      }
+         });
+
+
+    }
+    window.onload = myfunction();
+</script>
+
 </html>

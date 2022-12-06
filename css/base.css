@@ -14,10 +14,12 @@ a,a:hover,a:active,a:visited,a:link,a:focus{
     outline: none;
 }
 /*  重大事件 ，网站需要变为灰色*/
+/*
 html{
--webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+-webkit-filter: grayscale(100%);
 filter: grayscale(100%);
 }
+*/
 
 body{
     font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif !important;

@@ -8,7 +8,7 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="renderer" content="webkit">
     <meta property="og:title" content="Future-Record" />
-    <title>Future-Record公益</title>
+    <title>Future-Record资源</title>
     <meta name="keywords" content="Future-Record">
     <meta name="description" content="Future-Record">
     <!--<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">-->
@@ -93,7 +93,7 @@
 <div class="article_title bg" style="background: url('img/article.jpg')">
     <div class="content_container">
         <div class="article_title_line">
-            <h2>Future-Record公益| Future-Record 一直在努力</h2>
+            <h2>Future-Record资源| 一直在努力</h2>
         </div>
     </div>
 </div>
@@ -104,16 +104,148 @@
 <div class="article_text">
     <div class="content_container">
         <div class="article_info">
-            <span>作者：Future-Record<i>|</i></span>
+            <span>作者：东方鲤鱼<i>|</i></span>
             <span>热度：3<i>|</i></span>
             <span>发布日期：2021-12-31</span>
         </div>
         <div class="article_content">
-            　　日前，开发功能仍在不断迭代开发中。<br><br>
+            <br>
+            <h3>Future-Record 铭记.未来</h3><hr>
+
+            <h2>项目信息</h2><hr>
+            利用自己的技能，空闲时间不断学习新技术，应用开发于future-record开源项目。future-record项目是一个聚合性免费的项目，主要是想实现一个家庭收支记录的功能（开发中）；
+            分前后端架构，多模化划分，旨在解耦业务，提高开发效率；内部划分网关治理服务，鉴权管理服务，文件管理服务，任务管理服务，对接外部rest api 服务等
+
+            <h2>服务信息清单</h2>
+            <table border="1">
+                <tr>
+                    <th>服务描述</th>
+                    <th>服务名称</th>
+                    <th>服务端口</th>
+                    <th>备注</th>
+                </tr>
+                <tr>
+                    <td>网关服务</td>
+                    <td>future-gateway</td>
+                    <td>80</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>鉴权服务</td>
+                    <td>future-auth</td>
+                    <td>8081</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>前台服务</td>
+                    <td>future-rest</td>
+                    <td>8082</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>文件服务</td>
+                    <td>future-file</td>
+                    <td>8083</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>用户服务</td>
+                    <td>future-user</td>
+                    <td>8085</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>任务服务</td>
+                    <td>future-task</td>
+                    <td>8086</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>数据服务</td>
+                    <td>future-task</td>
+                    <td>8087</td>
+                    <td></td>
+                </tr>
+            </table>
+            <h2>项目版本记录</h2>
+            <table border="2">
+                <tr>
+                    <th>时间</th>
+                    <th>版本</th>
+                    <th>功能</th>
+                    <th>备注</th>
+                </tr>
+                <tr>
+                    <th>2020-04-15</th>
+                    <th>v1.0.0</th>
+                    <th>初始化项目架构</th>
+                    <th>备注</th>
+                </tr>
+                <tr>
+                    <th>2020-06-04</th>
+                    <th>v1.0.1</th>
+                    <th>鉴权服务基本功能测试开发</th>
+                    <th>备注</th>
+                </tr>
+                <tr>
+                    <th>2020-09-12</th>
+                    <th>v1.0.3</th>
+                    <th>邮件通知服务，pdf生成功能开发完成</th>
+                    <th>备注</th>
+                </tr>
+                <tr>
+                    <th>2021-02-02</th>
+                    <th>v1.0.4</th>
+                    <th>网关服务开发完成</th>
+                    <th>意识到聚合项目需要拆分，开始准备工作</th>
+                </tr>
+                <tr>
+                    <th>2021-04-02</th>
+                    <th>v1.0.6</th>
+                    <th>项目子模块task与流程服务实现容器化自动部署</th>
+                    <th>拆分出俩个子系统，集成jenkins+docker 自动化部署</th>
+                </tr>
+                <tr>
+                    <th>2021-05-16</th>
+                    <th>v1.0.7</th>
+                    <th>开始搭建websocket的服务</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>2022-01-9</th>
+                    <th>v1.0.8</th>
+                    <th>集成 Dubbo,rabbitmq</th>
+                    <th>Rabbitmq 集成 以及何种消息模式的简单使用，topic,direct,fanout  以及延时队列，1.搭建oauth2 认证授权服务
+                        2.在future-auth 服务中通过dubbo 调用future-ac-user服务获取用户
+                        3.支持提示与异常国际化
+                        4.网关鉴权支持（开发中</th>
+                </tr>
+                <tr>
+                    <th>2022-01-17</th>
+                    <th>v1.0.9</th>
+                    <th>Outh2 集成完成</th>
+                    <th>1.auth 鉴权服务基本功能开发完成
+                        2.增加可依赖 tools Starter 模块
+                        3.网关服务调整完成</th>
+                </tr>
+                <tr>
+                    <th>2022-03-22</th>
+                    <th>v1.0.10</th>
+                    <th>项目支持kubenetes 部署</th>
+                    <th>1.项目支持kubenetes 部署
+                        2.前端VUE 工程，登陆，注册，多因素验证开发完成
+                    </th>
+                </tr>
+            </table>
+            <br>
+                <br><br>
+            　　    2021年起，自项目孵化，不断的学习优化，在这个过程中，衍生出许多附属项目，比如流程服务future-flow.主要提供流程性的工作。为了提高开发效率，定制开发了IDEA插件Carp Helper ，帮助开发快速完成简单重复的代码。
+                为了方便部署，整理了各个中间件以及各个服务的部署脚本的仓库devops-deployment,为了方便展示数据，自学VUE后开发了web端。<br><br>
                 <img src="img/banner1.jpg" style="width: 300px;margin: 0 auto;display:block;"><br><br>
-            　　2021年起，项目启动，团队按计划开发功能，并将持续推进...<br><br>
-                <img src="img/banner1.jpg" style="width: 300px;margin: 0 auto;display:block;"><br><br>
-            　　东方鲤鱼是2021-2022年项目启动以来的建设者，管理者 和 策划者<br>
+            　　仓库地址：
+             gitLab官网，git@gitlab.com:zhangyajun/future-record.git<br>
+             gitee官网 https://gitee.com/DongFangLiYu/future-record.git<br>
+             <br>
         </div>
     </div>
 </div>
